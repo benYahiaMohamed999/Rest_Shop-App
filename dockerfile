@@ -1,8 +1,6 @@
 # Build stage
 FROM maven:3.8.1-jdk-11 AS build
-WORKDIR /app
 COPY . .
-RUN mvn clean package -DskipTests -e -X
 
 # Package stage
 FROM openjdk:17-jdk
