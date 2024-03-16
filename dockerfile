@@ -1,5 +1,5 @@
 # Build stage
-FROM maven:3.8.1-jdk-17 AS build
+FROM maven:3.8.1-jdk-11 AS build
 COPY . .
 RUN mvn --version
 
