@@ -1,8 +1,7 @@
 # Build stage
-FROM maven:4.0.0-jdk-17 AS build
+FROM maven:3.8.1-jdk-11 AS build
 COPY . .
-RUN mvn clean package -DskipTests
-
+RUN apt-get update && \ apt-get install -y maven
 # Package stage
 FROM openjdk:17-jdk
 EXPOSE 8080
