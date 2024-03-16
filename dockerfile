@@ -10,5 +10,5 @@ RUN mvn clean package -DskipTests
 
 
 FROM openjdk:18
-COPY ./target/auth_test-0.0.1-SNAPSHOT.jar /auth_test-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java","-jar","/auth_test-0.0.1-SNAPSHOT.jar"]
+COPY ./target/auth_test-0.0.1-SNAPSHOT.jar auth_test-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","auth_test-0.0.1-SNAPSHOT.jar"]
