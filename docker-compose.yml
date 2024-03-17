@@ -5,7 +5,8 @@ services:
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/auth_test
+      SPRING_DATA_MONGODB_URI: mongodb+srv://benyahiamohamd:hama1234@cluster0.9qilaf4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
     depends_on:
       - mongo
 
